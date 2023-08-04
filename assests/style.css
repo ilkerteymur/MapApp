@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#map {
+  height: 100vh;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  height: 100vh;
+  margin-left: 10px;
+  top: 0;
+  z-index: 1000;
+}
+aside .sidebar {
+  background: rgba(53, 51, 51, 0.63);
+  height: 90vh;
+  color: white;
+  transition: all 0.2s;
+  border-radius: 10px;
+  padding: 20px;
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+}
+aside .sidebar:hover {
+  background: rgb(53, 51, 51);
+}
+aside .sidebar h1 {
+  text-align: center;
+  margin: 10px 0 20px;
+  background: rgb(53, 51, 51);
+  padding: 3px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-family: "Courier New", Courier, monospace;
+}
+aside .sidebar form {
+  display: none;
+  flex-direction: column;
+  gap: 20px;
+}
+aside .sidebar form .field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+aside .sidebar form .field input, aside .sidebar form .field select {
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+aside .sidebar form button {
+  background: black;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+aside .sidebar form button:hover {
+  scale: 0.9;
+}
+aside .sidebar ul {
+  height: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  overflow: auto;
+  padding-right: 5px;
+}
+aside .sidebar ul::-webkit-scrollbar {
+  background: rgba(0, 0, 0, 0.808);
+  width: 10px;
+  border-radius: 10px;
+}
+aside .sidebar ul::-webkit-scrollbar-thumb {
+  background: rgb(90, 90, 90);
+  border-radius: 10px;
+}
+aside .sidebar ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(71, 65, 65, 0.801);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+aside .sidebar ul li div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+aside .sidebar ul li div p {
+  font-size: 15px;
+}
+aside .sidebar ul li div p span {
+  font-weight: bold;
+}
+aside .sidebar ul li i {
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.2s;
+}
+aside .sidebar ul li i:hover {
+  color: red;
+}/*# sourceMappingURL=style.css.map */
